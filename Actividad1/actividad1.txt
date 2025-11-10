@@ -1,0 +1,27 @@
+Se desea implementar un programa que gestione registros de lecturas de temperatura tomadas por distintos sensores.
+Cada registro contiene:
+
+    Código del sensor (entero positivo)
+
+    Temperatura medida (float)
+
+    Hora de la medición (entero en formato HHMM, por ejemplo 1530)
+
+El programa debe realizar las siguientes tareas:
+
+1) Leer desde un archivo de texto llamado "lecturas.txt" los registros mencionados (uno por línea, con formato: <codigo> <temperatura> <hora>).
+
+2) Cargar los datos en un arreglo de estructuras.
+
+3) Determinar y mostrar en pantalla:
+
+    a) El promedio de temperatura general.
+
+    b) El sensor con la temperatura más alta y la hora correspondiente.
+
+4) Generar un nuevo archivo "alertas.txt" que contenga solo los sensores cuya temperatura sea mayor a 40°C, indicando además la hora en formato HH:MM.
+
+5) Utilizar al menos una función para realizar cálculos (por ejemplo, para promedio o búsqueda del máximo).
+
+    El archivo "lecturas.txt" puede contener hasta 50 registros.
+    Controlar la apertura de archivos y validar que las temperaturas estén dentro del rango físico posible (–50 a 100°C).
